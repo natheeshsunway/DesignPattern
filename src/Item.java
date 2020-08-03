@@ -1,5 +1,10 @@
-public abstract class Item{
+public abstract class Item  implements Cloneable{
     private String title,price,url;
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
     public String getTitle() {
         return title;

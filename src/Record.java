@@ -1,3 +1,3 @@
-public class Record(){
+public class Record{
     public Record(){}
 }
