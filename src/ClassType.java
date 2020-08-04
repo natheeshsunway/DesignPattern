@@ -1,3 +1,3 @@
 public enum ClassType{
-    Movie,Book
+    Movie,Book,BlogWebsite,ShoppingWebsite
 }

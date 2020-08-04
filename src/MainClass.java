@@ -20,7 +20,9 @@ public class MainClass {
         System.out.println("---------------------------BUILDER--------------------------");
         /*BUILDER*/
         BuilderClassOuter.Builder builder = new BuilderClassOuter.Builder();
+
         builder.arg1("arg1").arg2("arg2").arg3("arg3").arg4("arg4");
+
         BuilderClassOuter builderClassOuter = builder.build();
         System.out.println(builderClassOuter.getArg1());
         System.out.println(builderClassOuter.getArg2());
@@ -53,5 +55,11 @@ public class MainClass {
         System.out.println(book.getUrl());
         System.out.println(book.getGetNumberOfPage());
 
+        System.out.println("---------------------------FACTORY--------------------------");
+        /*FACTORY*/
+        Website blogWebsite = Factory.getWebsiteInstance(ClassType.BlogWebsite);
+        System.out.println(blogWebsite.getPages());
+        Website shopWebsite =Factory.getWebsiteInstance(ClassType.ShoppingWebsite);
+        System.out.println(shopWebsite.getPages());
     }
 }
